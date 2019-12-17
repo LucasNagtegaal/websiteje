@@ -40,9 +40,9 @@ namespace SchoolTemplate.Controllers
               Id = Convert.ToInt32(reader["Id"]),
               Naam = reader["Naam"].ToString(),
               Calorieen = float.Parse(reader["calorieen"].ToString()),
-              Formaat = reader["Naam"].ToString(),
-              Gewicht = Convert.ToInt32(reader["Naam"].ToString()),
-              Prijs = Decimal.Parse(reader["Naam"].ToString())
+              Formaat = reader["Formaat"].ToString(),
+              Gewicht = Convert.ToInt32(reader["Gewicht"].ToString()),
+              Prijs = Decimal.Parse(reader["Prijs"].ToString())
             };
             products.Add(p);
           }
