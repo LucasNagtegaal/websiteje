@@ -37,6 +37,10 @@ button.accept-policy {
     margin: 0px auto;
 }
 
+header{
+    background-color:#4E4E50;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
