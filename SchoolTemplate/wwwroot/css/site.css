@@ -35,6 +35,11 @@ button.accept-policy {
 -------------------------------------------------- */
 .nav-item {
     margin: 0px auto;
+    color:white;
+}
+
+header{
+    background-color:#4E4E50;
 }
 
 header{
