@@ -52,11 +52,26 @@ namespace SchoolTemplate.Controllers
       return products;
     }
 
+    [Route("Privacy")]
     public IActionResult Privacy()
     {
       return View();
     }
-
+    [Route("Informatie")]
+    public IActionResult Informatie()
+    {
+      return View();
+    }
+    [Route("Overzicht")]
+    public IActionResult Overzicht()
+    {
+      return View();
+    }
+    [Route("Contact")]
+    public IActionResult Contact()
+    {
+      return View();
+    }            
     public IActionResult ShowAll()
     {
       return View();
