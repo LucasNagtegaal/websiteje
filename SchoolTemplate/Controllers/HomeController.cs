@@ -15,42 +15,42 @@ namespace SchoolTemplate.Controllers
 
     public IActionResult Index()
     {
-      List<Product> products = new List<Product>();
+      List<Festival> festivals = new List<Festival>();
       // uncomment deze regel om producten uit je database toe te voegen
-      products = GetProducts();
+      festivals = GetFestivals();
 
-      return View(products);
+      return View(festivals);
     }
 
-    private List<Product> GetProducts()
+
+    private List<Festival> GetFestivals()
     {
-      List<Product> products = new List<Product>();
+       List<Festival> festivals = new List<Festival>();
 
       using (MySqlConnection conn = new MySqlConnection(connectionString))
       {
         conn.Open();
-        MySqlCommand cmd = new MySqlCommand("select * from product", conn);
+        MySqlCommand cmd = new MySqlCommand("select * from festival", conn);
 
         using (var reader = cmd.ExecuteReader())
         {
           while (reader.Read())
           {
-            Product p = new Product
+            Festival p = new Festival
             {
               Id = Convert.ToInt32(reader["Id"]),
               Naam = reader["Naam"].ToString(),
-              Calorieen = float.Parse(reader["calorieen"].ToString()),
-              Formaat = reader["Formaat"].ToString(),
-              Gewicht = Convert.ToInt32(reader["Gewicht"].ToString()),
-              Prijs = Decimal.Parse(reader["Prijs"].ToString())
+              Beschrijving = reader["Beschrijving"].ToString(),
+              Datum = DateTime.Parse(reader["Datum"].ToString()),
             };
-            products.Add(p);
+            festivals.Add(p);
           }
         }
       }
 
-      return products;
+      return festivals;
     }
+
 
     [Route("Privacy")]
     public IActionResult Privacy()
