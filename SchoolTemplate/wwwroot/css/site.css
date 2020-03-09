@@ -40,7 +40,7 @@ button.accept-policy {
     align-items: center;
     font-family: 'Poppins', sans-serif;
     min-height: 8vh;
-    background-color: #000000;
+    background-color: #2759be;
 }
 
 .nav-links {
@@ -48,7 +48,7 @@ button.accept-policy {
     justify-content: space-around;
     width: 60%;
     list-style: none;
-    color: #ffffff;
+    color: #1f1f1f;
     letter-spacing: 3px;
     font-size: 14px;
 }
@@ -85,8 +85,12 @@ html {
 
 body {
     /* Margin bottom by footer height */
-    margin: 0px 200px 60px 200px;
-    background-color: #defafc;
+    margin: 0px;
+    background-image: linear-gradient(#4c7cc7,white);
+}
+
+.body-margin {
+    margin: 30px 150px 0px 150px;
 }
 
 .background {
