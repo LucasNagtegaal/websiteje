@@ -71,10 +71,15 @@ namespace SchoolTemplate.Controllers
     public IActionResult Contact()
     {
       return View();
-    }            
-    public IActionResult ShowAll()
+    }           
+        
+   [Route("contact")]
+   [HttpPost]
+    public IActionResult Contact(PersonModels model)
     {
-      return View();
+       ViewData["voornaam"] = voornaam;
+       ViewData["achternaam"] = achternaam;
+       return View();
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
