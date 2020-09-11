@@ -1,2 +1,19 @@
-﻿
-    <p1>This page shows overzicht</p1>
+﻿@using SchoolTemplate.Database;
+@model List<Festival>
+<p1>This page shows overzicht</p1>
+
+@foreach (Festival f in Model)
+{
+    <div class="box1">
+        <div class="boxtitle">
+            <h1>Actueel festival</h1>
+        </div>
+        <div class="boxtext">
+            <p>Naam: @f.Naam</p>
+            <p>Datum: 03/17/2020 - 03/20/2020</p>
+            <p>Beschrijving: @f.Beschrijving </p>
+        </div>
+    </div>
+}
+</div>
+</div>
