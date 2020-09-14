@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using MySql.Data.MySqlClient;
 using SchoolTemplate.Database;
 using SchoolTemplate.Models;
@@ -20,6 +21,21 @@ namespace SchoolTemplate.Controllers
       festivals = GetFestivals();
 
       return View(festivals);
+    }
+
+    private void SavePerson(PersonModel person)
+    {
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand("INSERT INTO klant(voornaam, achternaam, emailadres, geb_datum) VALUES(?voornaam, ?achternaam, ?email, ?geb_datum)", conn);
+
+                cmd.Parameters.Add("?voornaam", MySqlDbType.VarChar).Value = person.Voornaam;
+                cmd.Parameters.Add("?achternaam", MySqlDbType.VarChar).Value = person.Achternaam;
+                cmd.Parameters.Add("?email", MySqlDbType.VarChar).Value = person.Email;
+                cmd.Parameters.Add("?geb_datum", MySqlDbType.Date).Value = person.Geboortedatum;
+                cmd.ExecuteNonQuery();
+            }
     }
 
 
@@ -78,7 +94,14 @@ namespace SchoolTemplate.Controllers
    [HttpPost]
     public IActionResult Contact(PersonModel model)
     {
+      if(!ModelState.IsValid)
        return View(model);
+
+      SavePerson(model);
+
+            ViewData["formsucces"] = "ok";
+
+            return View();
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
