@@ -23,7 +23,8 @@ namespace SchoolTemplate.Controllers
     }
 
 
-    private List<Festival> GetFestivals()
+
+        private List<Festival> GetFestivals()
     {
        List<Festival> festivals = new List<Festival>();
 
@@ -65,7 +66,7 @@ namespace SchoolTemplate.Controllers
     [Route("Overzicht")]
     public IActionResult Overzicht()
     {
-      return View();
+      return View(GetFestivals());
     }
     [Route("Contact")]
     public IActionResult Contact()
@@ -75,11 +76,9 @@ namespace SchoolTemplate.Controllers
         
    [Route("contact")]
    [HttpPost]
-    public IActionResult Contact(PersonModels model)
+    public IActionResult Contact(PersonModel model)
     {
-       ViewData["voornaam"] = voornaam;
-       ViewData["achternaam"] = achternaam;
-       return View();
+       return View(model);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
