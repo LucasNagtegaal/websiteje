@@ -1,14 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SchoolTemplate",
-    "\\SchoolTemplate\\Controllers",
-    "\\SchoolTemplate\\Database",
-    "\\SchoolTemplate\\Models",
-    "\\SchoolTemplate\\Properties",
-    "\\SchoolTemplate\\Views",
-    "\\SchoolTemplate\\Views\\Home"
+    "\\SchoolTemplate"
   ],
-  "SelectedNode": "\\SchoolTemplate\\SchoolTemplate.csproj",
+  "SelectedNode": "\\SchoolTemplate\\SchoolTemplate.sln",
   "PreviewInSolutionExplorer": false
 }

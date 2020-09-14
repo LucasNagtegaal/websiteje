@@ -93,7 +93,7 @@ body {
     margin: 30px 150px 0px 150px;
 }
 
-.homeimage {
+.background {
     background-image: url("../Img/Festival.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -134,8 +134,4 @@ body {
 
 .boxtext{
     padding-left: 60px;
-}
-
-.boomimage{
-    background-repeat: no-repeat;
 }

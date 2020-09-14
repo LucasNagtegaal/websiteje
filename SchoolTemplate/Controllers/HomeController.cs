@@ -75,9 +75,11 @@ namespace SchoolTemplate.Controllers
         
    [Route("contact")]
    [HttpPost]
-    public IActionResult Contact(PersonModel model)
+    public IActionResult Contact(PersonModels model)
     {
-       return View(model);
+       ViewData["voornaam"] = voornaam;
+       ViewData["achternaam"] = achternaam;
+       return View();
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -4,7 +4,7 @@
     ViewData["Title"] = "Home Page";
 }
 <div class="body-margin">
-<div class="homeimage"></div>
+<div class="background"></div>
 <div class="container">
     @foreach (Festival f in Model)
     {
@@ -12,8 +12,7 @@
             <div class="boxtitle">
                 <h1>Actueel festival</h1>
             </div>
-            <div class="boxtext">               
-                <div class="boomimage"><img src="Img/boomfestival.jpg" /></div>
+            <div class="boxtext">
                 <p>Naam: @f.Naam</p>
                 <p>Datum: 03/17/2020 - 03/20/2020</p>
                 <p>Beschrijving: @f.Beschrijving </p>
