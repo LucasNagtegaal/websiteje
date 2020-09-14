@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SchoolTemplate"
+    "\\SchoolTemplate",
+    "\\SchoolTemplate\\Views",
+    "\\SchoolTemplate\\Views\\Home"
   ],
   "SelectedNode": "\\SchoolTemplate\\SchoolTemplate.sln",
   "PreviewInSolutionExplorer": false

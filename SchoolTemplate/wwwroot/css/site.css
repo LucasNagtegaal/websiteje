@@ -90,7 +90,7 @@ body {
 }
 
 .body-margin {
-    margin: 30px 150px 0px 150px;
+    margin: 30px 150px 700px 150px;
 }
 
 .background {
@@ -117,14 +117,13 @@ body {
     height:100%;
 }
 
-
+/*Actueel festival box*/
 .box1 {
     background-color: #262626;
-    height: 250px;
+    height: 1000px;
     color: white;
     margin: 25px 0px 0px 0px;
     text-align: left;
-    image: url("../Img/FestivalHomePagina.jpg")
 }
 
 .boxtitle{
@@ -134,4 +133,11 @@ body {
 
 .boxtext{
     padding-left: 60px;
+}
+
+.boximage {
+    background-image: url("../Img/boomfestival.jpg");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100px;
 }
