@@ -23,7 +23,8 @@ namespace SchoolTemplate.Controllers
     }
 
 
-    private List<Festival> GetFestivals()
+
+        private List<Festival> GetFestivals()
     {
        List<Festival> festivals = new List<Festival>();
 
@@ -65,7 +66,7 @@ namespace SchoolTemplate.Controllers
     [Route("Overzicht")]
     public IActionResult Overzicht()
     {
-      return View();
+      return View(GetFestivals());
     }
     [Route("Contact")]
     public IActionResult Contact()
