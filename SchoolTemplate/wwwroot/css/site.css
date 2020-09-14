@@ -117,10 +117,10 @@ body {
     height:100%;
 }
 
-/*Actueel festival box*/
+/*Overzicht box*/
 .box1 {
     background-color: #262626;
-    height: 1000px;
+    height: 300px;
     color: white;
     margin: 25px 0px 0px 0px;
     text-align: left;
@@ -138,6 +138,36 @@ body {
 .boximage {
     background-image: url("../Img/boomfestival.jpg");
     background-repeat: no-repeat;
-    height: 200px;
-    width: 100px;
+    height: 600px;
+    width: 300px;
+    position: relative;
+    top; 10px;
+    right: 100px;
+}
+
+/*Actueel festival box*/
+.af-box1 {
+    background-color: #262626;
+    height: 600px;
+    color: white;
+    margin: 25px 0px 0px 0px;
+    text-align: left;
+}
+
+.af-boxtitle {
+    padding-top: 10px;
+    padding-left: 45px;
+}
+
+.af-boxtext {
+    padding-left: 60px;
+}
+
+.af-boximage {
+    background-image: url("../Img/boomfestival.jpg");
+    background-repeat: no-repeat;
+    height: 50%;
+    width: 50%;
+    position: relative;
+    left: 600px;
 }
