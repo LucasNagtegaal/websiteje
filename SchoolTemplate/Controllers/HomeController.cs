@@ -58,7 +58,8 @@ namespace SchoolTemplate.Controllers
               Id = Convert.ToInt32(reader["Id"]),
               Naam = reader["Naam"].ToString(),
               Beschrijving = reader["Beschrijving"].ToString(),
-              Datum = DateTime.Parse(reader["Datum"].ToString()),
+              Start_dt = DateTime.Parse(reader["start_dt"].ToString()),
+              Eind_dt= DateTime.Parse(reader["eind_dt"].ToString())
             };
             festivals.Add(p);
           }

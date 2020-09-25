@@ -10,7 +10,8 @@ namespace SchoolTemplate.Database
 
     public string Beschrijving { get; set; }    
 
-    public DateTime Datum { get; set; }
+    public DateTime Start_dt { get; set; }
 
-  }
+    public DateTime Eind_dt { get; set; }
+    }
 }
