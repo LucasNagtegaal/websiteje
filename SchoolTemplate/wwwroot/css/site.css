@@ -12,6 +12,7 @@ Sticky footer styles
 html {
   font-size: 14px;
 }
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -136,22 +137,12 @@ body {
     padding-left: 60px;
 }
 
-.boximage {
-    background-image: url("../Img/boomfestival.jpg");
-    background-repeat: no-repeat;
-    height: 600px;
-    width: 300px;
-    position: relative;
-    top; 10px;
-    right: 100px;
-}
-
 /*Actueel festival box*/
 .af-box1 {
     background-color: #3e468261;
     height: 400px;
     color: white;
-    margin: 25px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
     text-align: left;
     float: left;
     width: 100%;
@@ -166,11 +157,13 @@ body {
     padding-top: 10px;
     padding-left: 45px;
     width: 50%;
+    font-size: 120%;
 }
 
 .af-boxtext {
     padding-left: 60px;
     width: 40%;
+    font-size: 120%;
 }
 
 .af-boximage {
@@ -181,5 +174,12 @@ body {
     width: 550px;
     position: relative;
     left: 650px;
-    bottom: 200px;
+    bottom: 300px;
+    border-radius: 15px;
+}
+
+/*Overzicht*/
+
+.container.ov{
+    top: 200px;
 }
