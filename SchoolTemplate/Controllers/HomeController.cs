@@ -100,14 +100,14 @@ namespace SchoolTemplate.Controllers
 
       SavePerson(model);
 
-           return Redirect("/gelukt")
+            return Redirect("/gelukt");
     }
 
     [Route("gelukt")]
     
     public IActionResult Gelukt()
     {
-      return View()
+            return View();
 
 
         }
