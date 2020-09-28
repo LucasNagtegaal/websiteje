@@ -100,10 +100,17 @@ namespace SchoolTemplate.Controllers
 
       SavePerson(model);
 
-            ViewData["formsucces"] = "ok";
-
-            return View();
+            return Redirect("/gelukt");
     }
+
+    [Route("gelukt")]
+    
+    public IActionResult Gelukt()
+    {
+            return View();
+
+
+        }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
