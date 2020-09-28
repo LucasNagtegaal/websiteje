@@ -13,5 +13,8 @@ namespace SchoolTemplate.Database
     public DateTime Start_dt { get; set; }
 
     public DateTime Eind_dt { get; set; }
+
+    public string Plaatje { get; set; }
+
     }
 }
