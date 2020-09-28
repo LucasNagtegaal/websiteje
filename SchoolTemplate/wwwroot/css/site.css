@@ -32,7 +32,7 @@ button.accept-policy {
     font-size: 1rem;
     line-height: inherit;
 }
-/* Navigation bar
+/* Navigation bar , footer 
 -------------------------------------------------- */
 
 .header {
@@ -77,6 +77,16 @@ header {
     text-decoration: none;
 }
 
+.footer {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0054a5;
+    color: white;
+    text-align: center;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -110,7 +120,7 @@ body {
   width: 100%;
   white-space: nowrap;
   /* Set the fixed height of the footer here */
-  height: 60px;
+  height: 160px;
   line-height: 60px; /* Vertically center the text there */
 }
 
