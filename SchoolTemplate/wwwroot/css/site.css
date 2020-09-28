@@ -62,7 +62,10 @@ button.accept-policy {
 }
 
 .nav-links a:hover {
-    color: white;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    padding: 20px;
 }
 
 header {
