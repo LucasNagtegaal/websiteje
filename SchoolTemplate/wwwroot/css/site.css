@@ -94,8 +94,11 @@ header {
     line-height: 60px; /* Vertically center the text there */
 }
 
-.insta-icon {
-    width: 100%;
+.footer a {
+    width: 50px;
+    margin-left: 50%;
+    margin-right:50%;
+    margin-top: 50px;
     height: auto;
     display: block;
     text-indent: -9999px;
@@ -180,7 +183,8 @@ body {
 
 .box1 {
     background-color: #141d616e;
-    height: 300px;
+    height: auto;
+    padding-bottom: 20px;
     color: white;
     margin: 25px 0px 0px 0px;
     text-align: left;
@@ -197,19 +201,46 @@ body {
     padding-left: 60px;
 }
 
-/*.background-ov {
-    background-image: url("../Img/boomfestival.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    border-radius: 15px;
+/* Contactformulier */
+.formulier input[type=text], input[type=datetime], select, textarea {
+    width: 50%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    margin-left: 25%;
 }
 
-@media (max-width: 768px){
-    .background-ov{
-        display: none;
-    }
+.formulier input[type=submit], select, textarea {
+    width: 25%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    margin-left: 37.5%;
 }
-*/
+
+.formulier input[type="submit"]:hover, select, textarea {
+    background-color: #858585;
+    color: white;
+}
+
+.formulier input[type="text"]:hover, select, textarea {
+    border: 2px solid black;
+}
+
+.missing{
+    text-align: center;
+    letter-spacing: 2px;
+}
+.pagetitle {
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 2px;
+}

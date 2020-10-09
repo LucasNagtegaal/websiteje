@@ -2,21 +2,29 @@
 @{
     ViewData["Title"] = "Contact";
  }
-<h1>Contact</h1>
 
-@if (Model != null) {
-<p>
-  Je voornaam is: @Model.Voornaam <br />
-  Je achternaam is: @Model.Achternaam <br />
-</p>
-}
+<div class="pagetitle">
+    <h1>Contact</h1>
+</div>
 
-<form method="post">
-    <input type="text" name="voornaam" placeholder="Voornaam" /> <br />
-    <input type="text" name="achternaam" placeholder="Achternaam" /> <br />
-    @Html.ValidationMessageFor(m => m.Achternaam) <br />
-    <input type="text" name="email" placeholder="e-mail" /> <br />
-    @Html.ValidationMessageFor(m => m.Email) <br />
-    <input type="datetime" name="geboortedatum" placeholder="geboortedatum" /> <br />
-    <input type="submit" value="verstuur" />
+<div class="missing">
+    @if (Model != null)
+    {
+        <p>
+            Je voornaam is: @Model.Voornaam <br />
+            Je achternaam is: @Model.Achternaam <br />
+        </p>
+    }
+</div>
+
+<div class="formulier">
+    <form method="post">
+        <input type="text" name="voornaam" placeholder="Voornaam" /> <br />
+        <input type="text" name="achternaam" placeholder="Achternaam" /> <br />
+        <div class="missing">@Html.ValidationMessageFor(m => m.Achternaam)</div> <br />
+        <input type="text" name="email" placeholder="E-mail" /> <br />
+        <div class="missing">@Html.ValidationMessageFor(m => m.Email) </div><br />
+        <input type="datetime" name="geboortedatum" placeholder="Geboortedatum" /> <br />
+        <input type="submit" value="verstuur" />
 </form>
+</div>
