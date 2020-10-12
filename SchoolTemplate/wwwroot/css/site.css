@@ -120,7 +120,7 @@ body {
 }
 
 .body-margin {
-    margin: 30px 150px 700px 150px;
+    margin: 30px 150px 400px 150px;
 }
 
 .background {
@@ -141,13 +141,14 @@ body {
 /*Actueel festival box*/
 .af-box1 {
     background-color: #3e468261;
-    height: 400px;
+    height: auto;
     color: white;
-    margin: 40px 0px 0px 0px;
+    margin: 40px 0px 250px 0px;
     text-align: left;
     float: left;
     width: 100%;
     border-radius: 15px;
+    padding-bottom: 30px;
 }
 
 .af-tekst{
@@ -167,16 +168,15 @@ body {
     font-size: 120%;
 }
 
-.af-boximage {
-    background-image: url("../Img/boomfestival.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-    width: 550px;
-    position: relative;
-    left: 650px;
-    bottom: 300px;
-    border-radius: 15px;
+.af-boxtext img {
+    height: 100%;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .af-boxtext img{
+        display:block;
+    }
 }
 
 /*Overzicht box*/
@@ -195,11 +195,55 @@ body {
 .boxtitle {
     padding-top: 10px;
     padding-left: 45px;
+    font-size:120%;
 }
 
 .boxtext {
     padding-left: 60px;
+    font-size: 120%;
 }
+
+.fm-box1 {
+    background-color: #3e468261;
+    height: 400px;
+    color: white;
+    margin: 40px 0px 0px 0px;
+    text-align: left;
+    float: left;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.fm-tekst {
+    display: inline;
+}
+
+.fm-boxtitle {
+    padding-top: 10px;
+    padding-left: 45px;
+    width: 50%;
+    font-size: 120%;
+}
+
+.fm-boxtext {
+    padding-left: 60px;
+    width: 40%;
+    font-size: 120%;
+}
+
+.fm-boximage {
+    background-image: url("../Img/FestivalTerrein.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 320px;
+    width: 550px;
+    position: relative;
+    left: 750px;
+    bottom: 250px;
+    border-radius: 15px;
+}
+
+
 
 /* Contactformulier */
 .formulier input[type=text], input[type=datetime], select, textarea {
@@ -235,6 +279,10 @@ body {
     border: 2px solid black;
 }
 
+.formulier input[type="datetime"]:hover, select, textarea {
+    border: 2px solid black;
+}
+
 .missing{
     text-align: center;
     letter-spacing: 2px;
@@ -243,4 +291,6 @@ body {
     text-align: center;
     padding: 10px;
     letter-spacing: 2px;
+    color: white;
+    font-size: 120%;
 }
