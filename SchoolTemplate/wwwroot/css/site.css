@@ -201,6 +201,47 @@ body {
     padding-left: 60px;
 }
 
+.fm-box1 {
+    background-color: #3e468261;
+    height: 400px;
+    color: white;
+    margin: 40px 0px 0px 0px;
+    text-align: left;
+    float: left;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.fm-tekst {
+    display: inline;
+}
+
+.fm-boxtitle {
+    padding-top: 10px;
+    padding-left: 45px;
+    width: 50%;
+    font-size: 120%;
+}
+
+.fm-boxtext {
+    padding-left: 60px;
+    width: 40%;
+    font-size: 120%;
+}
+
+.fm-boximage {
+    background-image: url("../Img/FestivalTerrein.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 320px;
+    width: 550px;
+    position: relative;
+    left: 750px;
+    bottom: 250px;
+    border-radius: 15px;
+}
+
+
 /* Contactformulier */
 .formulier input[type=text], input[type=datetime], select, textarea {
     width: 50%;
