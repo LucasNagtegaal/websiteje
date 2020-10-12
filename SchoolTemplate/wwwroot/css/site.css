@@ -229,13 +229,54 @@ body {
     background-image: url("../Img/FestivalTerrein.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
+    height: 320px;
     width: 550px;
     position: relative;
-    left: 650px;
+    left: 750px;
+    bottom: 300px;
+    border-radius: 15px;
+}
+
+.co-box1 {
+    background-color: #3e468261;
+    height: 400px;
+    color: white;
+    margin: 40px 0px 0px 0px;
+    text-align: left;
+    float: left;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.co-tekst {
+    display: inline;
+}
+
+.co-boxtitle {
+    padding-top: 10px;
+    padding-left: 45px;
+    width: 50%;
+    font-size: 120%;
+}
+
+.co-boxtext {
+    padding-left: 60px;
+    width: 40%;
+    font-size: 120%;
+}
+
+.co-boximage {
+    background-image: url("../Img/FestivalTerrein.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 320px;
+    width: 550px;
+    position: relative;
+    left: 750px;
     bottom: 300px;
     border-radius: 15px;
 } 
+
 
 
     /*.background-ov {
