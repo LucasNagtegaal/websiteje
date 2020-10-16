@@ -120,7 +120,7 @@ body {
 }
 
 .body-margin {
-    margin: 30px 150px 400px 150px;
+    margin: 30px 150px 300px 150px;
 }
 
 .background {
@@ -143,16 +143,11 @@ body {
     background-color: #3e468261;
     height: auto;
     color: white;
-    margin: 40px 0px 250px 0px;
+    margin: 40px 0px 50px 0px;
     text-align: left;
-    float: left;
     width: 100%;
     border-radius: 15px;
-    padding-bottom: 30px;
-}
-
-.af-tekst{
-    display: inline;
+    display: flex;
 }
 
 .af-boxtitle {
@@ -162,21 +157,19 @@ body {
     font-size: 120%;
 }
 
-.af-boxtext {
+.af-boxtext p {
     padding-left: 60px;
     width: 40%;
     font-size: 120%;
 }
 
 .af-boxtext img {
+    display: block;
     height: 100%;
-    width: 100%;
-}
-
-@media (min-width: 768px) {
-    .af-boxtext img{
-        display:block;
-    }
+    width: 45%;
+    float: left;
+    display: block;
+    padding: 40px 0px 50px 45px;
 }
 
 /*Overzicht box*/
