@@ -2,10 +2,19 @@
 @{
     ViewData["Title"] = "Festival";
 }
-
-    <div class="box1">
-        <div class="boxtitle">
-            <h1>@Model.Naam</h1>
+    <div class="body-margin">
+        <div class="container-ov">
+            <div class="box1">
+                <div class="boxtitle">
+                    <h1>@Model.Naam</h1>
+                </div>
+                <div class="boxtext">
+                    <p>Datum: @Model.Start_dt.ToString("D") - @Model.Eind_dt.ToString("D")</p>
+                    <p>Beschrijving: @Model.Beschrijving </p>
+                    <p>Prijs: @Model.Prijs</p>
+                    <p>Beschikbaarheid: @Model.Beschikbaarheid</p>
+                    <img src=@Model.Plaatje style="height:300px;width:auto;" />
+                </div>
+            </div>
         </div>
-            <p>@Model.Beschrijving</p>
     </div>

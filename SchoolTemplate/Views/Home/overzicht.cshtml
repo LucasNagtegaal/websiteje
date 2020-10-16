@@ -4,21 +4,24 @@
     ViewData["Title"] = "Overzicht";
 }
 
-<div class="body-margin">
-    <div class="background-ov"></div>
-    <div class="container-ov">
-        @foreach (Festival f in Model)
-        {
+    <div class="body-margin">
+        <div class="background-ov"></div>
+        <div class="container-ov">
+            @foreach (Festival f in Model)
+            {
             <div class="box1">
-                <div class="boxtitle">
-                    <a href="/Festival/@f.Id">@f.Naam</a>
-                </div>
-                <div class="boxtext">
-                    <p>Datum: @f.Start_dt.ToString("D") - @f.Eind_dt.ToString("D")</p>
-                    <p>Beschrijving: @f.Beschrijving </p>
-                    <img src=@f.Plaatje style="height:300px;width:auto;"/>
-                </div>
+                <a style="display:block" href="/Festival/@f.Id"></a>
+                    <div class="boxtitle">
+                        <a href="/Festival/@f.Id">@f.Naam</a>
+                    </div>
+                    <div class="boxtext">
+                        <p>Datum: @f.Start_dt.ToString("D") - @f.Eind_dt.ToString("D")</p>
+                        <p>Beschrijving:</p> 
+                        <p>- @f.Beschrijving </p>
+                        <a href="/Festival/@f.Id"><img src=@f.Plaatje style="height:300px;width:auto;" /></a>
+                    </div>
             </div>
-        }
+            }
+            </div>
     </div>
-</div>
+   

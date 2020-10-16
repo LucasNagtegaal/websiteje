@@ -144,9 +144,12 @@ namespace SchoolTemplate.Controllers
                         {
                             Id = Convert.ToInt32(reader["id"]),
                             Naam = reader["Naam"].ToString(),
-                            Datum = DateTime.Parse(reader["datum"].ToString()),
+                            Start_dt = DateTime.Parse(reader["start_dt"].ToString()),
+                            Eind_dt = DateTime.Parse(reader["eind_dt"].ToString()),
                             Beschrijving = reader["beschrijving"].ToString(),
-
+                            Prijs = reader["prijs"].ToString(),
+                            Plaatje = reader["Plaatje"].ToString(),
+                            Beschikbaarheid = Convert.ToInt32(reader["Beschikbaarheid"]),
                         };
                         festivals.Add(p);
                     }

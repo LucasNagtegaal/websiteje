@@ -152,7 +152,7 @@ body {
 
 .af-boxtitle {
     padding-top: 10px;
-    padding-left: 45px;
+    padding-left: 60px;
     width: 50%;
     font-size: 120%;
 }
@@ -179,16 +179,29 @@ body {
     height: auto;
     padding-bottom: 20px;
     color: white;
-    margin: 25px 0px 0px 0px;
+    margin: 25px 100px 0px 0px;
     text-align: left;
     border-radius: 15px;
     overflow: hidden;
+    display:block;
 }
 
 .boxtitle {
     padding-top: 10px;
-    padding-left: 45px;
-    font-size:120%;
+    padding-left: 60px;
+    font-size:160%;
+    margin-top: 10px;
+}
+
+.boxtitle a{
+    color: #1b1b1b;
+    text-decoration: none;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.boxtitle a:hover{
+    font-weight:bolder;
 }
 
 .boxtext {
@@ -196,46 +209,13 @@ body {
     font-size: 120%;
 }
 
-.fm-box1 {
-    background-color: #3e468261;
-    height: 400px;
-    color: white;
-    margin: 40px 0px 0px 0px;
-    text-align: left;
-    float: left;
-    width: 100%;
+.boxtext img {
     border-radius: 15px;
 }
 
-.fm-tekst {
-    display: inline;
+.if-body-margin {
+    margin: 30px 200px 300px 200px;
 }
-
-.fm-boxtitle {
-    padding-top: 10px;
-    padding-left: 45px;
-    width: 50%;
-    font-size: 120%;
-}
-
-.fm-boxtext {
-    padding-left: 60px;
-    width: 40%;
-    font-size: 120%;
-}
-
-.fm-boximage {
-    background-image: url("../Img/FestivalTerrein.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 320px;
-    width: 550px;
-    position: relative;
-    left: 750px;
-    bottom: 250px;
-    border-radius: 15px;
-}
-
 
 
 /* Contactformulier */
